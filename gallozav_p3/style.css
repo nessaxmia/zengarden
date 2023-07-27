@@ -1,0 +1,228 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Ysabeau+Infant:ital,wght@0,100;0,300;0,400;1,400&display=swap');
+
+html, body {
+    min-height: 100vh;
+	margin:  0;
+    padding: 0;
+	box-sizing: border-box;
+	}
+abbr {
+      text-decoration: none;
+    }
+h1, h3 {
+font-family: lora, serif;
+color: #232813;
+	}
+
+	body, p{
+		background-color: #fcfbf7;
+		font-family: Ysabeau Infant, sans-serif;
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: 100;
+		background-color: transparent;
+	}
+
+	.intro {
+		width: 100%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		background: url(images/bannerbackground.png);
+	}
+
+header, .summary {
+background-color: #EFDAB8;
+width: 50%;
+margin: auto;
+padding: 15px 15px 5px 15px;
+     
+	}
+
+.summary p {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 5px;
+}
+
+.intro h1 {
+	font-size: 48px;
+    line-height: 58px;
+	font-weight: 400;
+}
+
+.intro h2 {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 33px; 
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 26px;
+}
+
+	.preamble {
+	position: absolute;
+top: 100%;
+width: 70%;
+        margin: 20px 0px 0px 85px;
+        text-align: justify;
+   }
+
+	.preamble h3, .explanation h3 {
+		width: 80%;
+        margin: 0 auto;	
+        text-align: center;
+        }
+
+
+.preamble p, .explanation p{
+font-size: 16px;
+    margin-top: 0;
+    padding-top: 5px;
+	}
+
+
+.explanation {
+	width: 70%;
+	margin-top: 450px;
+    margin-left: 85px;
+    text-align: justify;
+}
+
+
+ .participation {
+width: 100%;
+     margin: auto;
+     text-align: justify;
+     background: url(images/Screen%20Shot%202023-07-27%20at%203.49.29%20PM.png);
+ }
+
+.participation p, .benefits p {
+     display: inline-block;
+    margin: auto;
+  max-width: 80%;
+    padding-left: 50px;
+}
+
+.benefits {
+    display: flex;
+    width: 100%;
+    padding-top: -100px;
+    text-align: justify;
+    flex-direction: column;
+  margin: auto;
+     background: url(images/Screen%20Shot%202023-07-27%20at%203.49.29%20PM.png);
+}
+
+.benefits h3, .participation h3, .requirements h3 {
+    text-align: center;
+}
+
+.requirements {
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+}
+
+p:nth-child(6) {
+ color: #FF7E89;
+ font-family: lora, serif;
+margin-top: 30px;
+    text-align: center;
+}
+.participation p:nth-child(4) {
+ font-size: 15px;
+}
+
+ li {
+     width: 100%;
+	list-style-type: none;
+	border-bottom: #4678A0 solid 3px;
+	color: #F28927; 
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ }
+a {
+	text-decoration: none;
+	color: #F28927;
+    font-weight: 400;
+ }
+
+footer {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: #79804D;
+    padding: 10px;
+    position: fixed;
+  bottom: 0;
+ justify-content: space-evenly;
+  width: 100%;
+}
+
+.sidebar {
+     margin-bottom: 50px;
+    padding-left: 10px;
+}
+
+.sidebar li{
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+    p {
+        20px;
+    } 
+    
+    h3 {
+    font-size: 28px;
+        line-height: 32px;
+    }
+    
+    .preamble, .explanation{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+  padding: 15px;
+}
+
+h3 {
+  grid-column: 1; 
+  margin: 0; 
+}
+
+p {
+  grid-column: 2; 
+  text-align: justify; 
+  margin: 0; 
+    }
+    .benefits p, .participation p, .requirements p {
+        margin-top: 5px;
+    }
+    
+    .participation {
+        padding: 20px 100px 20px 130px;
+    }
+}
